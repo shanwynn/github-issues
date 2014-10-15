@@ -2,9 +2,17 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-$font-main: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+$font-main: 'Open Sans', sans-serif;
 
 // Custom Styles
+a, a:visited {
+  text-decoration: none;
+  color: #FFF8FC;
+  font-family: $font-main;
+  font-weight: normal;
+  margin: 0;
+}
+
 body {
   background: #666674;
   background-image: url('../images/octocatfaded.png');
@@ -22,13 +30,39 @@ h1 {
   letter-spacing: -1px;
 }
 
+h2 {
+  float: left;
+  margin-left: 0;
+  width: 100%;
+}
+
 li {
+  display: inline-block;
   list-style-type: none;
+  font-family: $font-main;
 }
 
 span {
   color: red;
 }
+
+#state, #number {
+  float: right;
+  margin: 4%;
+  margin-top: 5%;
+  font-size: 20px;
+  color: #00BD30;
+}
+
+.stats {
+  margin-left: 20%;
+  margin-right: 50%;
+}
+
+li {
+  display: inline-block;
+}
+
 #token, #url {
   margin: 5%;
 }

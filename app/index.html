@@ -7,6 +7,7 @@
     <title>github issues</title>
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <script src="../bower_components/modernizr/modernizr.js"></script>
 
   </head>
@@ -19,12 +20,12 @@
       <h1>You have <span id="iCount"></span> issues.</h1>
       <div id="issues"></div>
       <script id="iTemplate" type="text/template">
-        <h2 id="iTitle"><a href="<%= html_url %>"><%= title %></a></h2>
-        <ul class="stats">
-              <li id="state"><%=state %></li>
-              <li id="number"><%=number %></li>
-            </ul>
-      </script>
+      <ul class="stats">
+        <li><h2 id="iTitle"><a href="<%= html_url %>"><%= title %></a></h2></li>
+        <li id="state"><%=state %></li>
+        <li id="number"><%=number %></li>
+      </ul>
+    </script>
     </div>
 
     <!-- build:js scripts/vendor.js -->
