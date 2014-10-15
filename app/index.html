@@ -13,10 +13,12 @@
   </head>
   <body>
     <div>
-      <input id="token" name="token" placeholder "aae99bc78b5b01f67d4fd2db06f4df87b0d02c15"
-      value= "aae99bc78b5b01f67d4fd2db06f4df87b0d02c15" />
-      <input id="url" name="url" placeholder "https://api.github.com/repos/shanwynn/my-proj/issues"
-      value= "https://api.github.com/repos/shanwynn/my-proj/issues" />
+      <div class="token-wrapper">
+        <input id="token" name="token" placeholder "aae99bc78b5b01f67d4fd2db06f4df87b0d02c15"
+        value= "aae99bc78b5b01f67d4fd2db06f4df87b0d02c15" />
+        <input id="url" name="url" placeholder "https://api.github.com/repos/shanwynn/my-proj/issues"
+        value= "https://api.github.com/repos/shanwynn/my-proj/issues" />
+      </div>
       <h1>You have <span id="iCount"></span> issues.</h1>
       <div id="issues"></div>
       <script id="iTemplate" type="text/template">
