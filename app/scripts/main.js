@@ -24,7 +24,7 @@ $.ajax({ url: APIurl }).done(function (data) {
 });
 
 setInterval(function() {
-  $.ajax({ url: APIurl }).done(function(data) {
+  $.ajax({ url: APIurl }).done(function (data) {
     $("#iCount").text(data.length);
   });
 }, 1000);
