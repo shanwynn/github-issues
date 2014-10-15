@@ -8,7 +8,7 @@ $.ajax({ url: APIurl }).done(function (data) {
   data.forEach(function(issue) {
     iContainer.append(iTemplate(issue));
   });
-});
+}, 1000);
 
 setInterval(function() {
   $.ajax({ url: APIurl }).done(function (data) {
