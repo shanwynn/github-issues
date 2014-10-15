@@ -12,21 +12,28 @@
   </head>
   <body>
     <div>
-      <input id="token" name="token" placeholder "Enter token here" />
+      <input id="token" name="token" placeholder "aae99bc78b5b01f67d4fd2db06f4df87b0d02c15"
+      value= "aae99bc78b5b01f67d4fd2db06f4df87b0d02c15" />
       <input id="url" name="url" placeholder "https://api.github.com/repos/shanwynn/my-proj/issues"
       value= "https://api.github.com/repos/shanwynn/my-proj/issues" />
-      <button>UNLOCK YOUR ISSUES!</button>
-      <h1>You currently have <span id="icount"></span> issues.</h1>
+      <h1>You have <span id="iCount"></span> issues.</h1>
       <div id="issues"></div>
-      <script id="iTemplate" type="text/template"></script>
-        <h2 id="iTitle"><a href="<%= html_url %>"<%= title %></a></h2>
-        <h2 id="iState"><%= state %></h2>
-        <h2 id="iNumber"><%= number %></h2>
+      <script id="iTemplate" type="text/template">
+        <h2 id="iTitle"><a href="<%= html_url %>"><%= title %></a></h2>
+        <ul class="stats">
+              <li id="state"><%=state %></li>
+              <li id="number"><%=number %></li>
+            </ul>
+      </script>
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+
+    <script type='text/template'></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="scripts/github_token.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

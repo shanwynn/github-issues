@@ -7,49 +7,16 @@ $font-main: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Se
 // Custom Styles
 body {
   background: #666674;
+  background-image: url('../images/octocatfaded.png');
+  background-repeat: no-repeat;
+  background-position: right center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-nav {
-  font-family: $font-main;
-  font-weight: bold;
-  font-size: 14px;
-  height: 55px;
-  width: 100%;
-  background: #F5F5F5;
-}
-
-.nav-bar {
-  display: inline-block;
-  margin-left: 13%;
-  padding-top: 0;
-  width: 62%;
-}
-
-.nav-bar-right {
-  margin-left: 61%;
-  margin-top: 0;
-  padding-top: 0;
-  width: 50%;
-}
-
-.nav-name {
-  float: right;
-  margin-left: 2%;
-  margin-right: -3%;
-  padding: 12px;
-  padding-left: -12px;
-  padding-right: 12px;
-}
-
-.nav-text {
-  display: inline-block;
-  margin-left: 2%;
-  margin-top: 0%;
-}
-
 h1 {
+  margin-left: 20%;
+  margin-top: -2%;
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
@@ -57,4 +24,11 @@ h1 {
 
 li {
   list-style-type: none;
+}
+
+span {
+  color: red;
+}
+#token, #url {
+  margin: 5%;
 }
