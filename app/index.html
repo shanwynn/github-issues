@@ -5,55 +5,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>github issues</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+
   </head>
   <body>
-
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-
-        <li>Sass</li>
-
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
-    </div>
+    <div>
+      <input id="token" name="token" placeholder "Enter token here" />
+      <input id="url" name="url" placeholder "https://api.github.com/repos/shanwynn/my-proj/issues"
+      value= "https://api.github.com/repos/shanwynn/my-proj/issues" />
+      <button>UNLOCK YOUR ISSUES!</button>
+      <h1>You currently have <span id="icount"></span> issues.</h1>
+      <div id="issues"></div>
+      <script id="iTemplate" type="text/template"></script>
+        <h2 id="iTitle"><a href="<%= html_url %>"<%= title %></a></h2>
+        <h2 id="iState"><%= state %></h2>
+        <h2 id="iNumber"><%= number %></h2>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
